@@ -1,0 +1,366 @@
+<html>
+
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+        img {
+          height: 320px;
+          width: 20px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+  <div class="parteSuperior"> <!--PARTE SUPERIOR (MENÚ Y BOTONES)-->
+  <div class="menu d-flex bg-secondary p-2 text-dark bg-opacity-25"> <!--MENÚ-->
+    <div class="instagram d-flex float-start">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <rect x="4" y="4" width="16" height="16" rx="4" />
+        <circle cx="12" cy="12" r="3" />
+        <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+      </svg> <p class="m-1 fs-5">Instagram</p>   
+    </div>
+    <div class="position-absolute top-0 end-0 mt-2">
+    <ul class="nav nav-tabs"> 
+        <li class="nav-item">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="modal">Create a new post</button>
+        </li>
+        <li class="nav-item dropdown"> 
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+            </a>
+            <ul class="dropdown-menu"> 
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                <li><a class="dropdown-item" href="#">Privacy and data</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+            </ul>
+        </li>
+    </ul>
+  </div>
+  </div>
+
+  <div class="buttons position-relative mx-auto mt-2" style="width: 200px;"> <!--BOTONES-->
+        <ul class="nav nav-tabs" id="myTab" role="tablist"> 
+            <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+                role="tab" aria-controls="home" aria-selected="true"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-border-all" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="4" y="4" width="16" height="16" rx="2" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="12" y1="4" x2="12" y2="20" />
+                  </svg></button>
+            </li>
+            <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+                role="tab" aria-controls="profile" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-square" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <rect x="4" y="4" width="16" height="16" rx="2" />
+                  </svg></button>
+            </li>
+        </ul>
+  </div>
+</div>
+
+    <div class="tab-content" id="myTabContent"> <!--PRIMERA PESTAÑA-->
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"></div>
+            <div class="container text-center m-2">
+                <div class="row">
+                  <div class="col-sm-4 pe-0"><img src="https://i0.wp.com/yummybarcelona.com/wp-content/uploads/2021/02/katsudon-3.jpg?fit=1600%2C1200&ssl=1" class="card-img-top"></div>
+                  <div class="col-sm-4 px-2"><img src="https://sharkninja-cookingcircle.s3.eu-west-1.amazonaws.com/wp-content/uploads/2020/07/31170116/chicken-katsu-1.jpg" class="card-img-top"></div>
+                  <div class="col-sm-4 ps-0"><img src="https://estoyhechouncocinillas.com/wp-content/uploads/2021/01/ramen-japones-casero.jpg" class="card-img-top"></div>
+                </div>
+            </div>
+            <div class="container text-center m-2">
+                <div class="row">
+                  <div class="col-sm-4 pe-0"><img src="https://chefatulya.com/wp-content/uploads/2021/07/tteokbokki_1-copy.jpg" class="card-img-top" ></div>
+                  <div class="col-sm-4 px-2"><img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/7DCD184B-BC7F-4CB6-B23D-85F234EBF745/Derivates/6aafa543-db6a-4414-aa8c-4c96e660d132.jpg" class="card-img-top"></div>
+                  <div class="col-sm-4 ps-0"><img src="https://i.pinimg.com/736x/0e/1c/26/0e1c2646792611203ff5339fef6b11ad.jpg" class="card-img-top"></div>
+                </div>
+            </div>
+            <div class="container text-center m-2">
+                <div class="row">
+                  <div class="col-sm-4 pe-0"><img src="https://sites.psu.edu/changblog/wp-content/uploads/sites/652/2012/10/niangao.jpg" class="card-img-top"></div>
+                  <div class="col-sm-4 px-2"><img src="https://redhousespice.com/wp-content/uploads/2022/02/Chinese-sweet-and-sour-ribs-scaled.jpg" class="card-img-top"></div>
+                  <div class="col-sm-4 ps-0"><img src="https://716f24d81edeb11608aa-99aa5ccfecf745e7cf976b37d172ce54.ssl.cf1.rackcdn.com/fish-fragrant-eggplants-yuxiang-qiezi-2236745l1.jpg" class="card-img-top"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-content" id="myTabContent"> <!--SEGUNDA PESTAÑA-->
+    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"> 
+        <div class="container">
+            <div class="pagination justify-content-center">
+            <div class="card border-light mb-3 w-50">
+            <div class="row post-header px-1 py-2">
+            <div class="col-8 float-left">
+                <h3>Katsudon</h3>
+            </div>
+            <div class="col-4 text-end mt-2">
+                <h6>25/01</h6>
+            </div>
+            </div>
+            <div class="d-flex align-items-center">
+            <div class="card-body px-1 py-1">
+                <div>
+                    <img class="mx-auto d-block img-fluid mb-2" src="https://i0.wp.com/yummybarcelona.com/wp-content/uploads/2021/02/katsudon-3.jpg?fit=1600%2C1200&ssl=1" style="object-fit: fill; width: 700px;">
+                </div>
+                <div>
+                  <p><b>106 Likes</b></p>
+                  <p class="w-100">Se trata de un plato japonés llamado katsudon (かつ丼), que consiste en un cuenco de arroz cubierto con una chuleta de cerdo rebozada, huevo revuelto y condimentos. Las variantes incluyen la katsudon con salsa, el demi katsudon, el shio katsudon, shōyu-dare katsudon y el katsudon de miso. </p>
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+
+           <div class="pagination justify-content-center">
+            <div class="card border-light mb-3 w-50">
+            <div class="row post-header px-1 py-2">
+            <div class="col-8 float-left">
+                <h3>Katsukarē</h3>
+            </div>
+            <div class="col-4 text-end mt-2">
+                <h6>13/01</h6>
+            </div>
+            </div>
+            <div class="d-flex align-items-center">
+            <div class="card-body px-1 py-1">
+                <div>
+                    <img class="mx-auto d-block img-fluid mb-2" src="https://sharkninja-cookingcircle.s3.eu-west-1.amazonaws.com/wp-content/uploads/2020/07/31170116/chicken-katsu-1.jpg" style="object-fit: fill; width: 700px;">
+                </div>
+                <div>
+                  <p><b>102 Likes</b></p>
+                  <p class="w-100">El katsukare (カツカレー) es un plato japonés muy famoso que consiste en una chuleta de cerdo troceada y empanada en crujiente panko (pan rallado japonés), que va acompañada de arroz con curry japonés.  </p>
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="pagination justify-content-center">
+            <div class="card border-light mb-3 w-50">
+            <div class="row post-header px-1 py-2">
+            <div class="col-8 float-left">
+                <h3>Ramen</h3>
+            </div>
+            <div class="col-4 text-end mt-2">
+                <h6>02/01</h6>
+            </div>
+            </div>
+            <div class="d-flex align-items-center">
+            <div class="card-body px-1 py-1">
+                <div>
+                    <img class="mx-auto d-block img-fluid mb-2" src="https://estoyhechouncocinillas.com/wp-content/uploads/2021/01/ramen-japones-casero.jpg" style="object-fit: fill; width: 700px;">
+                </div>
+                <div>
+                  <p><b>100 Likes</b></p>
+                  <p class="w-100">El ramen (ラーメン) es un plato de fideos japonés. Cada región de Japón tiene su propia receta de ramen y su preparación básica consiste en fideos japoneses servidos en un caldo preparado comúnmente a base de hueso de cerdo o pollo y distintas verduras. Sus sabores varían entre la pasta de miso, salsa de soja o sal y contiene diferentes guarniciones como rebanadas de carne de cerdo, algas, menma y cebolleta </p>
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="pagination justify-content-center">
+            <div class="card border-light mb-3 w-50">
+            <div class="row post-header px-1 py-2">
+            <div class="col-8 float-left">
+                <h3>Tteokbokki</h3>
+            </div>
+            <div class="col-4 text-end mt-2">
+                <h6>28/12</h6>
+            </div>
+            </div>
+            <div class="d-flex align-items-center">
+            <div class="card-body px-1 py-1">
+                <div>
+                    <img class="mx-auto d-block img-fluid mb-2" src="https://chefatulya.com/wp-content/uploads/2021/07/tteokbokki_1-copy.jpg" style="object-fit: fill; width: 700px;">
+                </div>
+                <div>
+                  <p><b>98 Likes</b></p>
+                  <p class="w-100">El tteokbokki (떡볶이) es un plato típico coreano hecho de pasteles de arroz (garaetteok) habitualmente salteados en una salsa picante hecha de gochujang (pasta de chile rojo) y un caldo salado. </p>
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="pagination justify-content-center">
+            <div class="card border-light mb-3 w-50">
+            <div class="row post-header px-1 py-2">
+            <div class="col-8 float-left">
+                <h3>Bibimbap</h3>
+            </div>
+            <div class="col-4 text-end mt-2">
+                <h6>22/12</h6>
+            </div>
+            </div>
+            <div class="d-flex align-items-center">
+            <div class="card-body px-1 py-1">
+                <div>
+                    <img class="mx-auto d-block img-fluid mb-2" src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/7DCD184B-BC7F-4CB6-B23D-85F234EBF745/Derivates/6aafa543-db6a-4414-aa8c-4c96e660d132.jpg" style="object-fit: fill; width: 700px;">
+                </div>
+                <div>
+                  <p><b>97 Likes</b></p>
+                  <p class="w-100">Bibimbap es un plato popular de la gastronomía coreana. Literalmente significa “arroz mezclado” o “comida mezclada”. Consiste en un cuenco de arroz con vegetales y carne encima. Al momento de comerlo se deben revolver los ingredientes y agregarles aceite de sésamo y gochujang.</p>
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="pagination justify-content-center">
+            <div class="card border-light mb-3 w-50">
+            <div class="row post-header px-1 py-2">
+            <div class="col-8 float-left">
+                <h3>Jajangmyeon</h3>
+            </div>
+            <div class="col-4 text-end mt-2">
+                <h6>20/12</h6>
+            </div>
+            </div>
+            <div class="d-flex align-items-center">
+            <div class="card-body px-1 py-1">
+                <div>
+                    <img class="mx-auto d-block img-fluid mb-2" src="https://i.pinimg.com/736x/0e/1c/26/0e1c2646792611203ff5339fef6b11ad.jpg" style="object-fit: fill; width: 700px;">
+                </div>
+                <div>
+                  <p><b>110 Likes</b></p>
+                  <p class="w-100">Es un plato típico de la gastronomía coreana que consiste en fideos gruesos de trigo cubiertos en salsa espesa hecha de chunjang (pasta negra de soja salada), carne, verduras picadas y en ocasiones marisco. </p>
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="pagination justify-content-center">
+            <div class="card border-light mb-3 w-50">
+            <div class="row post-header px-1 py-2">
+            <div class="col-8 float-left">
+                <h3>Chao Nian Gao</h3>
+            </div>
+            <div class="col-4 text-end mt-2">
+                <h6>15/12</h6>
+            </div>
+            </div>
+            <div class="d-flex align-items-center">
+            <div class="card-body px-1 py-1">
+                <div>
+                    <img class="mx-auto d-block img-fluid mb-2" src="https://sites.psu.edu/changblog/wp-content/uploads/sites/652/2012/10/niangao.jpg" style="object-fit: fill; width: 700px;">
+                </div>
+                <div>
+                  <p><b>102 Likes</b></p>
+                  <p class="w-100">El chao nian gao (炒年糕) es un plato muy popular en China. Es un salteado de pasta de arroz con verduras, huevo y algo de carne.</p>
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="pagination justify-content-center">
+            <div class="card border-light mb-3 w-50">
+            <div class="row post-header px-1 py-2">
+            <div class="col-8 float-left">
+                <h3>Tang Cu Pai Gu</h3>
+            </div>
+            <div class="col-4 text-end mt-2">
+                <h6>14/12</h6>
+            </div>
+            </div>
+            <div class="d-flex align-items-center">
+            <div class="card-body px-1 py-1">
+                <div>
+                    <img class="mx-auto d-block img-fluid mb-2" src="https://redhousespice.com/wp-content/uploads/2022/02/Chinese-sweet-and-sour-ribs-scaled.jpg" style="object-fit: fill; width: 700px;">
+                </div>
+                <div>
+                  <p><b>106 Likes</b></p>
+                  <p class="w-100">El plato Tang Cu Pai Gu (糖醋排骨) es un plato popular en China que consiste en costillas de cerdo fritas con salsa agridulce.</p>
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="pagination justify-content-center">
+            <div class="card border-light mb-3 w-50">
+            <div class="row post-header px-1 py-2">
+            <div class="col-8 float-left">
+                <h3>Yu Xiang Qiezi</h3>
+            </div>
+            <div class="col-4 text-end mt-2">
+                <h6>01/12</h6>
+            </div>
+            </div>
+            <div class="d-flex align-items-center">
+            <div class="card-body px-1 py-1">
+                <div>
+                    <img class="mx-auto d-block img-fluid mb-2" src="https://716f24d81edeb11608aa-99aa5ccfecf745e7cf976b37d172ce54.ssl.cf1.rackcdn.com/fish-fragrant-eggplants-yuxiang-qiezi-2236745l1.jpg" style="object-fit: fill; width: 700px;">
+                </div>
+                <div>
+                  <p><b>120 Likes</b></p>
+                  <p class="w-100">Las Yu Xiang Qiezi (鱼香茄子) consisten en berenjenas chinas salteadas y son un plato muy típico de la gastronomía china, especialmente de la comida sichuanesa. </p>
+                </div>
+            </div>
+            </div>
+            </div>
+          </div>
+         </div>
+         </div>
+    </div> 
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" href="modal"> <!--MODAL-->
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Caption:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3 d-flex">
+            <button type="button" class="btn btn-outline-primary"> <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-camera-plus" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="12" cy="13" r="3" />
+                <path d="M5 7h2a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h2m9 7v7a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" />
+                <line x1="15" y1="6" x2="21" y2="6" />
+                <line x1="18" y1="3" x2="18" y2="9" />
+              </svg></button> &nbsp
+              <button type="button" class="btn btn-outline-primary"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                <circle cx="12" cy="11" r="3" />
+                <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+              </svg></button>
+        </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Publish</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
